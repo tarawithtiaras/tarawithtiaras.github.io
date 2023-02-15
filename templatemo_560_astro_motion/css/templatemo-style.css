@@ -6,6 +6,44 @@ https://templatemo.com/tm-560-astro-motion
 
 */
 
+:root {
+
+    /*pinks*/
+    --murrey: rgba(148, 3, 104, 1);
+    --redViolet: rgba(220, 4, 155, 1);
+    --lavenderPink: rgba(253, 175, 230, 1);
+
+    /*purples*/
+    --tekheiet: rgba(79, 57, 127, 1);
+    --royalPurple: rgba(122, 94, 183, 1);
+    --wisteria: rgba(174, 157, 210, 1);
+
+    /*blues*/
+    --pennBlue: rgba(35, 31, 92, 1);
+    --persianBlue: rgba(69, 61, 184, 1);  
+    --periwinkle: rgba(182, 179, 230, 1);
+
+    /*complimentary*/
+    --atomicTangerine: rgba(247, 153, 110, 1);
+    --jasper: rgba(214, 104, 83, 1);
+    --platinum: rgba(216, 213, 219, 1);
+    --gunmetal: rgba(45, 49, 66, 1);
+
+
+    
+    
+
+    
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))
+}
+
+.social{
+    font-size: 26pt;
+}
+
+
 html, body, .page-container {
     height: 100%;
 }
@@ -19,13 +57,13 @@ body {
 }
 
 a {
-	color: #9F6;
+	color: var(--murrey);
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 a:hover {
-	color: #3CF;
+	color: var(--jasper);
 }
 
 p {
@@ -37,7 +75,7 @@ h2 {
 }
 
 .highlight {
-    color: #99FF66;
+    color: var(--atomicTangerine);
 }
 
 .page-container {
@@ -66,7 +104,7 @@ h2 {
 
 .btn-primary:hover,
 .btn-primary:focus {
-    color: #5cac38;
+    color: var(--murrey);
     background-color: white;
 }
 
@@ -144,13 +182,13 @@ h2 {
 
 .navbar .navbar-nav .nav-item.selected .nav-link,
 .navbar .navbar-nav .nav-item .nav-link:hover {
-    color: #99FF66;
-    border-bottom: 1px solid #99FF66;
+    color: var(--jasper);
+    border-bottom: 1px solid var(--jasper);
 }
 
 .cd-slider-nav li.selected a+.circle,
 .navbar .navbar-nav .nav-item .nav-link:hover+.circle {
-    background-color: #99FF66;
+    background-color: var(--jasper);
 }
 
 .navbar-toggler-icon {
@@ -171,7 +209,7 @@ h2 {
 
 .tm-link-white:hover,
 .tm-link-white:focus {
-    color: #99FF66;
+    color: var(--lavenderPink);
 }
 
 .cd-hero-slider {
@@ -464,7 +502,7 @@ figure.effect-julia:hover p {
 }
 
 .form-control:focus {
-    border-bottom: 1px solid #99FF66;
+    border-bottom: 1px solid var(--lavenderPink);
     outline: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
