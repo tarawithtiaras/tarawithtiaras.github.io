@@ -1,42 +1,18 @@
 /*
-
 TemplateMo 560 Astro Motion
-
 https://templatemo.com/tm-560-astro-motion
-
 */
 
 :root {
     --platinum: #D8D5DB;        /*rgba(216, 213, 219, 1)*/
     --gunmetal: #2D3142;        /*rgba(45, 49, 66, 1)*/
-
-    /* Main Primary color */
-    --purple-1: #E0C2EB;        /*rgba(224, 194, 235, 1)*/  
-    --purple-2: #C08ED2;        /*rgba(191, 142, 210, 1)*/ 
-    --purple-3: #9D60B3;        /*rgba(156, 96, 179, 1)*/ 
-    --purple-4: #813E99;        /*rgba(127, 63, 153, 1)*/ 
+    --blue: #3ccdff;
+    --orange: #e69758;
+    --teal: #32c8c5;
+    --purple: #bf8ed2;
+    --pink: #fb4bc6;
+    --navy: #231f5c;
     --purple-5: #6C2586;        /*rgba(107, 37, 134, 1)*/ 
-
-    /* Main Secondary color (1) */
-    --blue-1: #C1DCEA;          /*rgba(193, 222, 233, 1)*/ 
-    --blue-2: #8CB7CE;          /*rgba(139, 187, 205, 1)*/ 
-    --blue-3: #5D91AC;          /*rgba(91, 149, 171, 1)*/ 
-    --blue-4: #3D7492;          /*rgba(59, 121, 145, 1)*/ 
-    --blue-5: #246080;          /*rgba(35, 101, 126, 1)*/ 
-
-    --lightBlue: #3CCDFF;
-    
-    --orange-1: #FFE5D1;        /*rgba(255, 230, 209, 1)*/ 
-    --orange-2: #FFCFA9;        /*rgba(255, 208, 169, 1)*/ 
-    --orange-3: #FFBA84;        /*rgba(255, 187, 132, 1)*/ 
-    --orange-4: #E69758;        /*rgba(230, 153, 88, 1)*/ 
-    --orange-5: #CA7531;        /*rgba(202, 118, 49, 1)*/ 
-
-    --pink-1: #FEC3EC;
-    --pink-2: #FD87D9;
-    --pink-3: #FB4BC6;
-    --pink-4: #C8048D;
-    --pink-5: #940368;
 
     --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -63,13 +39,13 @@ body {
 }
 
 a {
-    color: var(--pink-5);
+    color: var(--blue);
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 a:hover {
-    color: var(--orange-5);
+    color: var(--purple);
 }
 
 p {
@@ -81,7 +57,7 @@ h2 {
 }
 
 .highlight {
-    color: var(--orange-3);
+    color: var(--purple);
 }
 
 .page-container {
@@ -110,7 +86,7 @@ h2 {
 
 .btn-primary:hover,
 .btn-primary:focus {
-    color: var(--pink-5);
+    color: var(--blue);
     background-color: white;
 }
 
@@ -189,13 +165,13 @@ h2 {
 
 .navbar .navbar-nav .nav-item.selected .nav-link,
 .navbar .navbar-nav .nav-item .nav-link:hover {
-    color: var(--pink-4);
-    border-bottom: 1px solid var(--pink-4);
+    color: var(--blue);
+    border-bottom: 1px solid var(--blue);
 }
 
 .cd-slider-nav li.selected a+.circle,
 .navbar .navbar-nav .nav-item .nav-link:hover+.circle {
-    background-color: var(--pink-4);
+    background-color: var(--teal);
 }
 
 .navbar-toggler-icon {
@@ -216,7 +192,7 @@ h2 {
 
 .tm-link-white:hover,
 .tm-link-white:focus {
-    color: var(--lavenderPink);
+    color: var(--purple);
 }
 
 .cd-hero-slider {
@@ -693,7 +669,7 @@ figure.effect-julia:hover p {
     margin: -75px 0 0 -75px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #3498db;
+    border-top-color: var(--blue);
     /* Chrome, Opera 15+, Safari 5+ */
     animation: spin 2s linear infinite;
     /* Chrome, Firefox 16+, IE 10+, Opera */
