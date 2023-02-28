@@ -19,15 +19,45 @@ https://templatemo.com/tm-560-astro-motion
     --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))
 }
 
+.expand {
+    display: block;
+    text-decoration: none;
+    color: #555;
+    cursor: pointer;
+  }
+
+  .detail {
+    margin: 20px 0 0 0;
+    display: none;
+    line-height: 22px;
+  }
+  
+  .right-arrow {
+    width: 10px;
+    height: 10px;
+    float: left;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 15px 15px 0 0;
+  }
+
 .social {
     font-size: 26pt;
 }
 
+.fa-fw{
+    width: (18em / 14);
+    text-align: center;
+}
+.center-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-html,
-body,
-.page-container {
+html {
     height: 100%;
+    box-sizing: border-box;
 }
 
 body {
@@ -36,6 +66,11 @@ body {
     font-weight: 300;
     color: white;
     line-height: 1.5;
+    box-sizing: inherit;
+    position: relative;
+    padding-bottom: 2em;
+    min-height: 100%;
+
 }
 
 a {
@@ -45,7 +80,7 @@ a {
 }
 
 a:hover {
-    color: var(--purple);
+    color: var(--orange);
 }
 
 p {
@@ -63,9 +98,9 @@ h2 {
 .page-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     padding-left: 30px;
     padding-right: 30px;
+    height: auto;
 }
 
 .container-fluid {
@@ -216,12 +251,25 @@ h2 {
 }
 
 .page-left {
-    margin-left: 100px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-basis: auto;
+    padding: 3%;
 }
 
 .page-right {
-    margin-right: 100px;
-    margin-left: auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-basis: auto;
+    padding: 3%;
+}
+
+li {
+    display: flex;
 }
 
 .tm-bg-dark {
@@ -231,7 +279,7 @@ h2 {
 .intro-left {
     margin-right: 20px;
     padding: 30px 40px;
-    max-width: 505px;
+    max-width: auto;
 }
 
 .intro-img-1 {
@@ -264,13 +312,7 @@ h2 {
     margin-top: 25px;
 }
 
-.tm-footer {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
+
 
 /* Gallery page */
 .gallery-container {
@@ -534,6 +576,17 @@ figure.effect-julia:hover p {
     width: 100%;
 }
 
+.tm-footer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0px;
+    height: 5em; 
+}
+
 .tm-footer-right {
     text-align: right;
 }
@@ -605,7 +658,7 @@ figure.effect-julia:hover p {
     }
 
     .tm-footer-right {
-        text-align: left;
+        text-align: right;
         margin-top: 10px;
     }
 }
@@ -669,7 +722,7 @@ figure.effect-julia:hover p {
     margin: -75px 0 0 -75px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: var(--blue);
+    border-top-color: var(--pink);
     /* Chrome, Opera 15+, Safari 5+ */
     animation: spin 2s linear infinite;
     /* Chrome, Firefox 16+, IE 10+, Opera */
@@ -685,7 +738,7 @@ figure.effect-julia:hover p {
     bottom: 5px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #e74c3c;
+    border-top-color:var(--purple-5);
     /* Chrome, Opera 15+, Safari 5+ */
     animation: spin 3s linear infinite;
     /* Chrome, Firefox 16+, IE 10+, Opera */
@@ -700,7 +753,7 @@ figure.effect-julia:hover p {
     bottom: 15px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #f9c922;
+    border-top-color: var(--teal);
     /* Chrome, Opera 15+, Safari 5+ */
     animation: spin 1.5s linear infinite;
     /* Chrome, Firefox 16+, IE 10+, Opera */
@@ -727,7 +780,7 @@ figure.effect-julia:hover p {
     top: 0;
     width: 51%;
     height: 100%;
-    background: #222222;
+    background: var(--navy);
     z-index: 2000;
     /* Chrome, Opera 15+, Safari 3.1+ */
     /* IE 9 */

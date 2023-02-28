@@ -28,8 +28,8 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
-    background-color: #fff;
+    color: var(--gunmetal);
+    background-color: var(--platinum);
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent
 }
@@ -216,7 +216,7 @@ sup {
 }
 
 a {
-    color: var(--atomicTangerine);
+    color: var(--orange);
     text-decoration: underline
 }
 
