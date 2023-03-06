@@ -64,7 +64,7 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 19px;
     font-weight: 300;
-    color: white;
+    color: var(--platinum);
     line-height: 1.5;
     box-sizing: inherit;
     position: relative;
@@ -114,15 +114,15 @@ h2 {
 }
 
 .btn-primary {
-    background-color: white;
+    background-color: var(--platinum);
     border: none;
-    color: #333;
+    color: var(--gunmetal);
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
     color: var(--blue);
-    background-color: white;
+    background-color: var(--platinum);
 }
 
 /* Style the video: 100% width and height to cover the entire window */
@@ -147,7 +147,7 @@ h2 {
 }
 
 .navbar a {
-    color: white;
+    color: var(--platinum);
 }
 
 .navbar-brand {
@@ -171,7 +171,7 @@ h2 {
     font-size: 1.5rem;
     font-weight: bold;
     padding: 15px 65px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--platinum);
 }
 
 .nav-item {
@@ -184,17 +184,17 @@ h2 {
     bottom: -10px;
     width: 20px;
     height: 20px;
-    background-color: white;
+    background-color:var(--platinum);
     border-radius: 50%;
 }
 
 .tm-border-bottom {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--platinum);
     padding-bottom: 48px;
 }
 
 .tm-border-top {
-    border-top: 1px solid white;
+    border-top: 1px solid var(--platinum);
     padding-top: 48px;
 }
 
@@ -222,7 +222,7 @@ h2 {
 }
 
 .tm-link-white {
-    color: white;
+    color:var(--platinum);
 }
 
 .tm-link-white:hover,
@@ -372,7 +372,7 @@ li {
 .gallery-slider figure figcaption>a {
     z-index: 1000;
     text-indent: 200%;
-    white-space: nowrap;
+   white-space: nowrap;
     font-size: 0;
     opacity: 0;
 }
@@ -504,10 +504,10 @@ figure.effect-julia:hover p {
 
 /* About page */
 .tm-about-container {
-    border-top: 1px solid white;
+    border-top: 1px solid var(--platinum);
     padding-top: 50px;
     padding-bottom: 50px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--platinum);
 }
 
 /* Contact page */
@@ -522,7 +522,7 @@ figure.effect-julia:hover p {
 
 .form-control,
 .form-control:focus {
-    color: white;
+    color:var(--platinum);
     background-color: transparent;
 }
 
@@ -534,19 +534,19 @@ figure.effect-julia:hover p {
 }
 
 .form-control::-webkit-input-placeholder {
-    color: white;
+    color:var(--platinum);
 }
 
 .form-control:-moz-placeholder {
-    color: white;
+    color:var(--platinum);
 }
 
 .form-control::-moz-placeholder {
-    color: white;
+    color:var(--platinum);
 }
 
 .form-control:-ms-input-placeholder {
-    color: white;
+    color:var(--platinum);
 }
 
 .tm-mb-30 {
