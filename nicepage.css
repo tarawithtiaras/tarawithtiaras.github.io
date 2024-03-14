@@ -4,6 +4,15 @@
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2021 Froala Labs
  */
+iframe {
+  border: none;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+
+}
+
+
 
 .fr-clearfix::after {
   clear: both;
@@ -16278,7 +16287,7 @@ section.u-image:not(.u-hover-box),
   pointer-events: auto;
   pointer-events: initial;
 }
-
+/*
 .u-stick-footer {
   display: flex;
   flex-direction: column;
@@ -16287,10 +16296,11 @@ section.u-image:not(.u-hover-box),
 .u-stick-footer .u-footer {
   margin-top: auto;
 }
+*/
 
-.u-hide-header .u-header,
-.u-hide-footer .u-footer {
+.u-hide-header .u-header {
   display: none;
+  border: none;
 }
 
 .u-absolute-hcenter {
@@ -26641,7 +26651,7 @@ a.pswp__share--download:hover {
 
   to {
     transform-origin: center center;
-    transform: translate3d(-50% !important, -50% !important, 0);
+    transform: translate3d(-50% !important, -50% !important 0);
     opacity: 1;
   }
 }
@@ -50796,7 +50806,7 @@ blockquote {
 }
 
 
-
+/*
 .u-footer .u-sheet-1 {
   min-height: 120px;
 }
@@ -50853,10 +50863,12 @@ blockquote {
     width: 340px;
   }
 }
+*/
 
 /*begin-variables base-font-size*/
 html {
   font-size: 16px;
 }
+
 
 /*end-variables base-font-size*/
